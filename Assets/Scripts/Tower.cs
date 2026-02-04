@@ -7,13 +7,14 @@ public class Tower : MonoBehaviour
     //public Ring[] rings;
     public Stack rings;
     public GameObject ringContainer;
-    public Image selectionButton;
+    public CanvasGroup selectionButton;
+    public Game gameInstance;
 
     private void Start()
     {
         int biggestRingSize = ringContainer.transform.childCount;
         rings = new Stack();
-        //Add rings to stack
+        //Add references of rings to stack
         foreach (Ring ring in ringContainer.GetComponentsInChildren<Ring>())
         {
             ring.RingSize = biggestRingSize;
@@ -25,6 +26,6 @@ public class Tower : MonoBehaviour
 
     public void Clicked()
     {
-        Game.instance.SelectTower(this);
+        gameInstance.SelectTower(this);
     }
 }

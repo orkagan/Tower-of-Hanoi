@@ -88,7 +88,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 257853070558f454e9c57a0dffdc963e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Ring
-  ringSize: 0
+  uiNumber: {fileID: 0}
 --- !u!1 &656278268493115789
 GameObject:
   m_ObjectHideFlags: 0
@@ -201,7 +201,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tower
   ringContainer: {fileID: 3068173617250613720}
-  selectionButton: {fileID: 4399073238576486902}
+  selectionButton: {fileID: 1373584594004025938}
+  gameInstance: {fileID: 0}
 --- !u!1 &763234634384014742
 GameObject:
   m_ObjectHideFlags: 0
@@ -426,7 +427,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 257853070558f454e9c57a0dffdc963e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Ring
-  ringSize: 0
+  uiNumber: {fileID: 0}
 --- !u!1 &1505555186919918418
 GameObject:
   m_ObjectHideFlags: 0
@@ -488,7 +489,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -569,7 +570,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1505555186919918418}
   m_Enabled: 1
-  m_Alpha: 1
+  m_Alpha: 0
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
@@ -661,7 +662,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 257853070558f454e9c57a0dffdc963e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Ring
-  ringSize: 0
+  uiNumber: {fileID: 0}
 --- !u!1 &2091987384962840411
 GameObject:
   m_ObjectHideFlags: 0
@@ -750,7 +751,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 257853070558f454e9c57a0dffdc963e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Ring
-  ringSize: 0
+  uiNumber: {fileID: 0}
 --- !u!1 &2422285667658179770
 GameObject:
   m_ObjectHideFlags: 0
@@ -839,7 +840,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 257853070558f454e9c57a0dffdc963e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Ring
-  ringSize: 0
+  uiNumber: {fileID: 0}
 --- !u!1 &3068173617250613720
 GameObject:
   m_ObjectHideFlags: 0
@@ -1009,7 +1010,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 257853070558f454e9c57a0dffdc963e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Ring
-  ringSize: 0
+  uiNumber: {fileID: 0}
 --- !u!1 &4149464423351072940
 GameObject:
   m_ObjectHideFlags: 0
@@ -1098,7 +1099,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 257853070558f454e9c57a0dffdc963e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Ring
-  ringSize: 0
+  uiNumber: {fileID: 0}
 --- !u!1 &4631478374855483785
 GameObject:
   m_ObjectHideFlags: 0
@@ -1187,7 +1188,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 257853070558f454e9c57a0dffdc963e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Ring
-  ringSize: 0
+  uiNumber: {fileID: 0}
 --- !u!1 &6713945239244547435
 GameObject:
   m_ObjectHideFlags: 0
@@ -1276,7 +1277,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 257853070558f454e9c57a0dffdc963e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Ring
-  ringSize: 0
+  uiNumber: {fileID: 0}
 --- !u!1 &7144250035012947349
 GameObject:
   m_ObjectHideFlags: 0
@@ -1365,4 +1366,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 257853070558f454e9c57a0dffdc963e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Ring
-  ringSize: 0
+  uiNumber: {fileID: 0}

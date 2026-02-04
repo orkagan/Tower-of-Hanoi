@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class Ring : MonoBehaviour
@@ -19,5 +20,6 @@ public class Ring : MonoBehaviour
     private void Awake()
     {
         uiNumber = GetComponentInChildren<TMP_Text>();
+        //GetComponent<Image>().color = Random.ColorHSV(0f, 1f, 0.4f, 1f, 0.4f, 1f);
     }
 }
