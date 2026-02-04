@@ -16,9 +16,10 @@ public class Tower : MonoBehaviour
         //Add rings to stack
         foreach (Ring ring in ringContainer.GetComponentsInChildren<Ring>())
         {
-            ring.ringSize = biggestRingSize;
+            ring.RingSize = biggestRingSize;
             biggestRingSize--;
             rings.Push(ring);
+            Debug.Log($"Ring registered: {ring}");
         }
     }
 

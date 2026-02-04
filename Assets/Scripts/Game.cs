@@ -60,9 +60,9 @@ public class Game : MonoBehaviour
                 MoveRing(SelectedTower, newTower);
             }
             //Move Ring to new tower if ring on top of new tower is bigger than the ring being moved
-            else if (((Ring)newTower.rings.Peek()).ringSize > ((Ring)SelectedTower.rings.Peek()).ringSize)
+            else if (((Ring)newTower.rings.Peek()).RingSize > ((Ring)SelectedTower.rings.Peek()).RingSize)
             {
-                Debug.Log($"{((Ring)newTower.rings.Peek()).ringSize} > {((Ring)SelectedTower.rings.Peek()).ringSize}");
+                Debug.Log($"{((Ring)newTower.rings.Peek()).RingSize} > {((Ring)SelectedTower.rings.Peek()).RingSize}");
                 MoveRing(SelectedTower, newTower);
             }
         }
