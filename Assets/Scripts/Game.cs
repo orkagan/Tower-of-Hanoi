@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Game : MonoBehaviour
@@ -72,7 +73,7 @@ public class Game : MonoBehaviour
     {
         Ring movingRing = (Ring)fromTower.rings.Pop();
         toTower.rings.Push(movingRing);
-        movingRing.transform.parent = toTower.ringContainer.transform;
+        movingRing.transform.SetParent(toTower.ringContainer.transform, false);
         //Deselect towers
         SelectedTower = null;
     }
