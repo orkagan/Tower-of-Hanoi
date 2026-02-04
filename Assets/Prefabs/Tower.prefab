@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8635787431102250704}
   - component: {fileID: 72477045284986757}
   - component: {fileID: 3364181324586669420}
+  - component: {fileID: 2321081407756823107}
   m_Layer: 5
   m_Name: Ring (3)
   m_TagString: Untagged
@@ -75,6 +76,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2321081407756823107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171463688550456420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 257853070558f454e9c57a0dffdc963e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Ring
+  ringSize: 0
 --- !u!1 &656278268493115789
 GameObject:
   m_ObjectHideFlags: 0
@@ -186,6 +200,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 245db544fc4e6f2449b4237f4a9d5e9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tower
+  ringContainer: {fileID: 3068173617250613720}
+  selectionButton: {fileID: 4399073238576486902}
 --- !u!1 &763234634384014742
 GameObject:
   m_ObjectHideFlags: 0
@@ -333,6 +349,7 @@ GameObject:
   - component: {fileID: 111022503251190316}
   - component: {fileID: 2220891914039205979}
   - component: {fileID: 464906289093227246}
+  - component: {fileID: 3023153996045283217}
   m_Layer: 5
   m_Name: Ring (9)
   m_TagString: Untagged
@@ -397,6 +414,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &3023153996045283217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1291815323553571390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 257853070558f454e9c57a0dffdc963e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Ring
+  ringSize: 0
 --- !u!1 &1505555186919918418
 GameObject:
   m_ObjectHideFlags: 0
@@ -468,7 +498,7 @@ MonoBehaviour:
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
-  m_FillCenter: 1
+  m_FillCenter: 0
   m_FillMethod: 4
   m_FillAmount: 1
   m_FillClockwise: 1
@@ -554,6 +584,7 @@ GameObject:
   - component: {fileID: 2163457163434016580}
   - component: {fileID: 2165324437796479726}
   - component: {fileID: 4421247079621581883}
+  - component: {fileID: 2500310057159695}
   m_Layer: 5
   m_Name: Ring (1)
   m_TagString: Untagged
@@ -618,6 +649,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2500310057159695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1827561649750858327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 257853070558f454e9c57a0dffdc963e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Ring
+  ringSize: 0
 --- !u!1 &2091987384962840411
 GameObject:
   m_ObjectHideFlags: 0
@@ -629,6 +673,7 @@ GameObject:
   - component: {fileID: 2523659202098026494}
   - component: {fileID: 4593033190534637529}
   - component: {fileID: 2186607224156117693}
+  - component: {fileID: 4835261628597989127}
   m_Layer: 5
   m_Name: Ring (5)
   m_TagString: Untagged
@@ -693,6 +738,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &4835261628597989127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2091987384962840411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 257853070558f454e9c57a0dffdc963e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Ring
+  ringSize: 0
 --- !u!1 &2422285667658179770
 GameObject:
   m_ObjectHideFlags: 0
@@ -704,6 +762,7 @@ GameObject:
   - component: {fileID: 5512125867103152915}
   - component: {fileID: 4990674081096068932}
   - component: {fileID: 2718943854905615056}
+  - component: {fileID: 8812746147243534972}
   m_Layer: 5
   m_Name: Ring (4)
   m_TagString: Untagged
@@ -768,6 +827,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &8812746147243534972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2422285667658179770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 257853070558f454e9c57a0dffdc963e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Ring
+  ringSize: 0
 --- !u!1 &3068173617250613720
 GameObject:
   m_ObjectHideFlags: 0
@@ -798,16 +870,16 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 3330772742482462193}
-  - {fileID: 2163457163434016580}
-  - {fileID: 7418036312169759320}
-  - {fileID: 8635787431102250704}
-  - {fileID: 5512125867103152915}
-  - {fileID: 2523659202098026494}
-  - {fileID: 6696419604504685108}
-  - {fileID: 8053778912502894515}
-  - {fileID: 1373807690085446140}
   - {fileID: 111022503251190316}
+  - {fileID: 1373807690085446140}
+  - {fileID: 8053778912502894515}
+  - {fileID: 6696419604504685108}
+  - {fileID: 2523659202098026494}
+  - {fileID: 5512125867103152915}
+  - {fileID: 8635787431102250704}
+  - {fileID: 7418036312169759320}
+  - {fileID: 2163457163434016580}
+  - {fileID: 3330772742482462193}
   m_Father: {fileID: 6207762924725454193}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -848,7 +920,7 @@ MonoBehaviour:
   m_ChildControlHeight: 0
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
-  m_ReverseArrangement: 0
+  m_ReverseArrangement: 1
 --- !u!1 &3882092521490821459
 GameObject:
   m_ObjectHideFlags: 0
@@ -860,6 +932,7 @@ GameObject:
   - component: {fileID: 7418036312169759320}
   - component: {fileID: 9219705306070154276}
   - component: {fileID: 4744610095478007519}
+  - component: {fileID: 4932390893155644677}
   m_Layer: 5
   m_Name: Ring (2)
   m_TagString: Untagged
@@ -924,6 +997,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &4932390893155644677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3882092521490821459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 257853070558f454e9c57a0dffdc963e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Ring
+  ringSize: 0
 --- !u!1 &4149464423351072940
 GameObject:
   m_ObjectHideFlags: 0
@@ -935,6 +1021,7 @@ GameObject:
   - component: {fileID: 6696419604504685108}
   - component: {fileID: 2750412297698021976}
   - component: {fileID: 4168110030588687352}
+  - component: {fileID: 3114709451391206383}
   m_Layer: 5
   m_Name: Ring (6)
   m_TagString: Untagged
@@ -999,6 +1086,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &3114709451391206383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4149464423351072940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 257853070558f454e9c57a0dffdc963e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Ring
+  ringSize: 0
 --- !u!1 &4631478374855483785
 GameObject:
   m_ObjectHideFlags: 0
@@ -1010,6 +1110,7 @@ GameObject:
   - component: {fileID: 8053778912502894515}
   - component: {fileID: 8752897444084832534}
   - component: {fileID: 8592557272409703891}
+  - component: {fileID: 5608125342548696611}
   m_Layer: 5
   m_Name: Ring (7)
   m_TagString: Untagged
@@ -1074,6 +1175,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &5608125342548696611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4631478374855483785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 257853070558f454e9c57a0dffdc963e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Ring
+  ringSize: 0
 --- !u!1 &6713945239244547435
 GameObject:
   m_ObjectHideFlags: 0
@@ -1085,6 +1199,7 @@ GameObject:
   - component: {fileID: 3330772742482462193}
   - component: {fileID: 5179187709470862754}
   - component: {fileID: 7208034885513249780}
+  - component: {fileID: 4104495100370258930}
   m_Layer: 5
   m_Name: Ring
   m_TagString: Untagged
@@ -1149,6 +1264,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &4104495100370258930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6713945239244547435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 257853070558f454e9c57a0dffdc963e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Ring
+  ringSize: 0
 --- !u!1 &7144250035012947349
 GameObject:
   m_ObjectHideFlags: 0
@@ -1160,6 +1288,7 @@ GameObject:
   - component: {fileID: 1373807690085446140}
   - component: {fileID: 8475711675155240351}
   - component: {fileID: 6247219982628810626}
+  - component: {fileID: 6086939844025479186}
   m_Layer: 5
   m_Name: Ring (8)
   m_TagString: Untagged
@@ -1224,3 +1353,16 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &6086939844025479186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7144250035012947349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 257853070558f454e9c57a0dffdc963e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Ring
+  ringSize: 0

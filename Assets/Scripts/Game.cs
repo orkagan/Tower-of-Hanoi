@@ -4,34 +4,76 @@ public class Game : MonoBehaviour
 {
     //Quick singleton yaaaaaay
     public static Game instance;
-    
-    public Tower selectedTower = null;
+
+    private Tower[] towers;
+    private Tower selectedTower = null;
+    public Tower SelectedTower
+    {
+        get { return selectedTower; }
+        set
+        {
+            selectedTower = value;
+            //Update selection UI
+            foreach (Tower tower in towers)
+            {
+                if (selectedTower == tower)
+                {
+                    tower.selectionButton.color = Color.white;
+                }
+                else
+                {
+                    tower.selectionButton.color = new Color(0, 0, 0, 0);
+                }
+            }
+        }
+    }
 
     private void Awake()
     {
         instance = this;
     }
 
+    private void Start()
+    {
+        towers = GetComponentsInChildren<Tower>();
+    }
+
     public void SelectTower(Tower newTower)
     {
-        Debug.Log($"Clicked Tower: {newTower}");
-        //No tower selected
-        if (selectedTower == null)
+        //If no tower selected, and target has rings
+        if (SelectedTower == null & newTower.rings.Count != 0)
         {
-            selectedTower = newTower;
+            SelectedTower = newTower;
         }
         //Deselect currently selected tower
-        else if (newTower == selectedTower)
+        else if (newTower == SelectedTower)
         {
-            selectedTower = null;
+            SelectedTower = null;
         }
         //Move ring from selected tower to new tower
-        else if (newTower != selectedTower)
+        else if (newTower != SelectedTower)
         {
-            //TODO: Move Ring to new tower
-            //Deselect towers
-            selectedTower = null;
+            //Move Ring if tower has no rings
+            if (newTower.rings.Count == 0)
+            {
+                MoveRing(SelectedTower, newTower);
+            }
+            //Move Ring to new tower if ring on top of new tower is bigger than the ring being moved
+            else if (((Ring)newTower.rings.Peek()).ringSize > ((Ring)SelectedTower.rings.Peek()).ringSize)
+            {
+                Debug.Log($"{((Ring)newTower.rings.Peek()).ringSize} > {((Ring)SelectedTower.rings.Peek()).ringSize}");
+                MoveRing(SelectedTower, newTower);
+            }
         }
-        Debug.Log($"Selected Tower: {selectedTower}");
+        Debug.Log($"Selected Tower: {SelectedTower}");
+    }
+
+    public void MoveRing(Tower fromTower, Tower toTower)
+    {
+        Ring movingRing = (Ring)fromTower.rings.Pop();
+        toTower.rings.Push(movingRing);
+        movingRing.transform.parent = toTower.ringContainer.transform;
+        //Deselect towers
+        SelectedTower = null;
     }
 }
