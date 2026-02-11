@@ -11,7 +11,10 @@ public class Ring : MonoBehaviour
         set
         {
             ringSize = value;
-            uiNumber.text = ringSize.ToString();
+            if (uiNumber)
+            {
+                uiNumber.text = ringSize.ToString();
+            }
         }
     }
 

@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using TMPro;
 
 public class Game : MonoBehaviour
 {
@@ -12,6 +13,21 @@ public class Game : MonoBehaviour
         {
             selectedTower = value;
             ChangeSelectionUI();
+        }
+    }
+
+    [SerializeField] TMP_Text moveCounterText;
+    private int moveCounter = 0;
+    public int MoveCounter
+    {
+        get { return moveCounter; }
+        set
+        {
+            moveCounter = value;
+            if (moveCounterText)
+            {
+                moveCounterText.text = $"Moves:\n{moveCounter}";
+            }
         }
     }
 
@@ -28,10 +44,19 @@ public class Game : MonoBehaviour
 
     public void SelectTower(Tower newTower)
     {
-        //If no tower selected, and target has rings
-        if (SelectedTower == null & newTower.rings.Count != 0)
+        //If no tower selected
+        if (SelectedTower == null)
         {
-            SelectedTower = newTower;
+            //Do nothing if tower has no rings
+            if (newTower.rings.Count <= 0)
+            {
+                return;
+            }
+            //Select if tower has rings
+            else
+            {
+                SelectedTower = newTower;
+            }
         }
         //Deselect currently selected tower
         else if (newTower == SelectedTower)
@@ -49,11 +74,9 @@ public class Game : MonoBehaviour
             //Move Ring to new tower if ring on top of new tower is bigger than the ring being moved
             else if (((Ring)newTower.rings.Peek()).RingSize > ((Ring)SelectedTower.rings.Peek()).RingSize)
             {
-                Debug.Log($"{((Ring)newTower.rings.Peek()).RingSize} > {((Ring)SelectedTower.rings.Peek()).RingSize}");
                 MoveRing(SelectedTower, newTower);
             }
         }
-        Debug.Log($"Selected Tower: {SelectedTower}");
     }
 
     public void MoveRing(Tower fromTower, Tower toTower)
@@ -65,6 +88,8 @@ public class Game : MonoBehaviour
         movingRing.transform.SetParent(toTower.ringContainer.transform, false);
         //Deselect towers
         SelectedTower = null;
+        //Add to the move counter
+        MoveCounter++;
     }
 
     public void ChangeSelectionUI()
