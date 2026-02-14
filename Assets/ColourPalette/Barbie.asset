@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b61d918513b35c84fa8cf7a5e7e86b90, type: 3}
-  m_Name: Light Mode
+  m_Name: Barbie
   m_EditorClassIdentifier: Assembly-CSharp::Palette
   backgroundColor: {r: 1, g: 1, b: 1, a: 1}
-  towerColor: {r: 1, g: 1, b: 1, a: 1}
+  towerColor: {r: 1, g: 0, b: 0.6338296, a: 1}
   tileColors:
   - {r: 0.83, g: 0.3414184, b: 0.67106384, a: 1}
   - {r: 0.1017647, g: 0.4918625, b: 0.865, a: 1}
+  - {r: 0.8584906, g: 0.376602, b: 0.5419759, a: 1}

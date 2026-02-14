@@ -985,7 +985,7 @@ PrefabInstance:
     - target: {fileID: 5133491716133103012, guid: 10342afdeecc0df4d97f56a1b8ab530c, type: 3}
       propertyPath: gameInstance
       value: 
-      objectReference: {fileID: 1291352429}
+      objectReference: {fileID: 0}
     - target: {fileID: 5512125867103152915, guid: 10342afdeecc0df4d97f56a1b8ab530c, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1434,7 +1434,7 @@ PrefabInstance:
     - target: {fileID: 5133491716133103012, guid: 10342afdeecc0df4d97f56a1b8ab530c, type: 3}
       propertyPath: gameInstance
       value: 
-      objectReference: {fileID: 1291352429}
+      objectReference: {fileID: 0}
     - target: {fileID: 5512125867103152915, guid: 10342afdeecc0df4d97f56a1b8ab530c, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1794,7 +1794,7 @@ PrefabInstance:
     - target: {fileID: 5133491716133103012, guid: 10342afdeecc0df4d97f56a1b8ab530c, type: 3}
       propertyPath: gameInstance
       value: 
-      objectReference: {fileID: 1291352429}
+      objectReference: {fileID: 0}
     - target: {fileID: 5585729487952602847, guid: 10342afdeecc0df4d97f56a1b8ab530c, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

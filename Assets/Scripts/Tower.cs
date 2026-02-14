@@ -16,7 +16,7 @@ public class Tower : MonoBehaviour
         int biggestRingSize = ringContainer.transform.childCount;
         rings = new Stack();
         //Add references of rings to stack and assigns sizes
-        foreach (Ring ring in ringContainer.GetComponentsInChildren<Ring>())
+        foreach (Ring ring in ringContainer.GetComponentsInChildren<Ring>(false))
         {
             ring.RingSize = biggestRingSize;
             biggestRingSize--;
