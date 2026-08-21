@@ -51,6 +51,6 @@ public class PaletteManager : MonoBehaviour
         }
         ringImages = foundRingImages;
         
-        currentPalette_prop = currentPalette;
+        if (currentPalette!=null) currentPalette_prop = currentPalette;
     }
 }

@@ -306,6 +306,56 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &441838933
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 441838935}
+  - component: {fileID: 441838934}
+  m_Layer: 0
+  m_Name: Auto Solver
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &441838934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 441838933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f8e3611fe766114ea47fa05467a45c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HanoiSolver
+  game: {fileID: 1291352429}
+  source: {fileID: 1778006142}
+  auxilary: {fileID: 1460936569}
+  target: {fileID: 1765137450}
+  discCount: 0
+  secondsBetweenMoves: 0.05
+--- !u!4 &441838935
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 441838933}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -805,7 +855,7 @@ MonoBehaviour:
   backgroundImage: {fileID: 1291352426}
   towerImages: []
   ringImages: []
-  currentPalette: {fileID: 11400000, guid: 3f813313749fd0449ab0c39b84b79919, type: 2}
+  currentPalette: {fileID: 0}
 --- !u!1001 &1355503136
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1250,11 +1300,44 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10342afdeecc0df4d97f56a1b8ab530c, type: 3}
+--- !u!114 &1460936569 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5133491716133103012, guid: 10342afdeecc0df4d97f56a1b8ab530c, type: 3}
+  m_PrefabInstance: {fileID: 1355503136}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 245db544fc4e6f2449b4237f4a9d5e9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Tower
 --- !u!224 &1468687894 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6207762924725454193, guid: 10342afdeecc0df4d97f56a1b8ab530c, type: 3}
   m_PrefabInstance: {fileID: 7652433620373382131}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1765137450 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5133491716133103012, guid: 10342afdeecc0df4d97f56a1b8ab530c, type: 3}
+  m_PrefabInstance: {fileID: 2121834613}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 245db544fc4e6f2449b4237f4a9d5e9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Tower
+--- !u!114 &1778006142 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5133491716133103012, guid: 10342afdeecc0df4d97f56a1b8ab530c, type: 3}
+  m_PrefabInstance: {fileID: 7652433620373382131}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 245db544fc4e6f2449b4237f4a9d5e9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Tower
 --- !u!1001 &2121834613
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1968,3 +2051,4 @@ SceneRoots:
   - {fileID: 619394802}
   - {fileID: 345606001}
   - {fileID: 85964132}
+  - {fileID: 441838935}
